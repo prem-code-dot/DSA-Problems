@@ -6,7 +6,7 @@ package Strings;
 
 public class OneAwayStrings {
     public static void main(String[] args) {
-        String s1 = "bc";
+        String s1 = "abce";
         String s2 = "abc";
 
         char[] arr1 = s1.toCharArray();
@@ -29,12 +29,30 @@ public class OneAwayStrings {
                 System.out.println("One Away");
         }
 
-        // If String lengths are not same, difference is one & either of the string is substring of another
+        // If String lengths have difference 1
+        else if (Math.abs(n - m) == 1) {
+            int i = 0, j = 0, counter = 0;
+            while (i < n && j < m) {
+                if (arr1[i] == arr2[j]) {
+                    i++;
+                    j++;
+                } else if (arr1[i] != arr2[j] && n > m) {
+                    counter++;
+                    i++;
+                } else if (arr1[i] != arr2[j] && n < m) {
+                    counter++;
+                    j++;
+                }
+            }
+            if (counter > 1)
+                System.out.println("Not one Away");
+            else
+                System.out.println("One Away");
+        }
+
+        // If String lengths has difference greater than 1
         else {
-            if (Math.abs(n - m) == 1 && ((s1.indexOf(s2) != -1) || (s2.indexOf(s1) != -1))) {
-                System.out.println("one Away");
-            } else
-                System.out.println("Not One Away");
+            System.out.println("Not One Away");
         }
     }
 }
