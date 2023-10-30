@@ -29,7 +29,7 @@ public class OneAwayStrings {
                 System.out.println("One Away");
         }
 
-        // If String lengths have difference 1 & either of the string is
+        // If String lengths have difference 1
         else if (Math.abs(n - m) == 1) {
             int i = 0, j = 0, counter = 0;
             while (i < n && j < m) {
@@ -48,7 +48,10 @@ public class OneAwayStrings {
                 System.out.println("Not one Away");
             else
                 System.out.println("One Away");
-        } else {
+        }
+
+        // If String lengths has difference greater than 1 or anything
+        else {
             System.out.println("Not One Away");
         }
     }
