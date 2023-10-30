@@ -50,7 +50,7 @@ public class OneAwayStrings {
                 System.out.println("One Away");
         }
 
-        // If String lengths has difference greater than 1 or anything
+        // If String lengths has difference greater than 1
         else {
             System.out.println("Not One Away");
         }
