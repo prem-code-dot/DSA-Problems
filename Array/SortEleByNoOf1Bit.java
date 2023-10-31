@@ -1,4 +1,4 @@
-// Sort Integers by The Number of 1 Bits in given array
+// Sort Integers by The Number of 1 Bits
 
 package Array;
 
