@@ -1,6 +1,6 @@
 // Given a roman numeral, convert it to an integer.
 
-package Array;
+package Strings;
 
 import java.util.HashMap;
 
