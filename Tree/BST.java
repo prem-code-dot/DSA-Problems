@@ -49,7 +49,6 @@ public class BST {
 	}
 
 	private void print(Node root) {
-		// TODO Auto-generated method stub
 		if (root == null) {
 			return;
 		}
@@ -63,7 +62,7 @@ public class BST {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		BST t = new BST();
 		t.insert(3);
 		t.insert(2);

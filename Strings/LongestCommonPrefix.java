@@ -2,7 +2,7 @@
 // If there is no common prefix, return an empty string "".
 // Constraint: strs[i] consists of only lowercase English letters.
 
-package Strings;
+
 
 import java.util.Scanner;
 import java.util.Arrays;

@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 public class BinarySearch {
-    public static void BinarySearch(int[] arr, int n, int find, int low, int high) {
+    public static void Search(int[] arr, int n, int find, int low, int high) {
         int mid = low + (high - low) / 2;
         if (arr[mid] == find) {
             System.out.println("Element found at index " + mid);
             return;
         } else if (arr[mid] > find) {
-            BinarySearch(arr, n, find, low, mid - 1);
+            Search(arr, n, find, low, mid - 1);
         } else
-            BinarySearch(arr, n, find, mid + 1, high);
+            Search(arr, n, find, mid + 1, high);
     }
 
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class BinarySearch {
             int find = sc.nextInt();
             int high = n - 1, low = 0;
 
-            BinarySearch(arr, n, find, low, high);
+            Search(arr, n, find, low, high);
         }
     }
 }

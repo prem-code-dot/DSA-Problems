@@ -2,7 +2,7 @@
 
 // A word is a maximal substring consisting of non-space characters only.
 
-package Strings;
+
 
 public class LengthofLastWord {
     public static int lengthOfLastWord(String s) {

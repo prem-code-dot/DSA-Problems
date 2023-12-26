@@ -1,7 +1,5 @@
 // Given a roman numeral, convert it to an integer.
 
-package Strings;
-
 import java.util.HashMap;
 
 public class RomanToInteger {

@@ -2,7 +2,7 @@
 // They are One Away if a single operation (changing a char, deleting a char or adding a char) will
 // change one of the string to other.
 
-package Strings;
+
 
 public class OneAwayStrings {
     public static void main(String[] args) {
